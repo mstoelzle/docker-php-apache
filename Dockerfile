@@ -13,44 +13,44 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.url="https://github.com/mstoelzle/docker-php"
 
 # PHP_INI_DIR to be symmetrical with official php docker image
-ENV PHP_INI_DIR /etc/php/7.4
+ENV PHP_INI_DIR /etc/php/7.3
 
 # When using Composer, disable the warning about running commands as root/super user
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
 # Persistent runtime dependencies
 ARG DEPS="\
-        php7.4 \
-        php7.4-phar \
-        php7.4-bcmath \
-        php7.4-calendar \
-        php7.4-mbstring \
-        php7.4-exif \
-        php7.4-ftp \
-        php7.4-openssl \
-        php7.4-zip \
-        php7.4-sysvsem \
-        php7.4-sysvshm \
-        php7.4-sysvmsg \
-        php7.4-shmop \
-        php7.4-sockets \
-        php7.4-zlib \
-        php7.4-bz2 \
-        php7.4-curl \
-        php7.4-simplexml \
-        php7.4-xml \
-        php7.4-opcache \
-        php7.4-dom \
-        php7.4-xmlreader \
-        php7.4-xmlwriter \
-        php7.4-tokenizer \
-        php7.4-ctype \
-        php7.4-session \
-        php7.4-fileinfo \
-        php7.4-iconv \
-        php7.4-json \
-        php7.4-posix \
-        php7.4-apache2 \
+        php7.3 \
+        php7.3-phar \
+        php7.3-bcmath \
+        php7.3-calendar \
+        php7.3-mbstring \
+        php7.3-exif \
+        php7.3-ftp \
+        php7.3-openssl \
+        php7.3-zip \
+        php7.3-sysvsem \
+        php7.3-sysvshm \
+        php7.3-sysvmsg \
+        php7.3-shmop \
+        php7.3-sockets \
+        php7.3-zlib \
+        php7.3-bz2 \
+        php7.3-curl \
+        php7.3-simplexml \
+        php7.3-xml \
+        php7.3-opcache \
+        php7.3-dom \
+        php7.3-xmlreader \
+        php7.3-xmlwriter \
+        php7.3-tokenizer \
+        php7.3-ctype \
+        php7.3-session \
+        php7.3-fileinfo \
+        php7.3-iconv \
+        php7.3-json \
+        php7.3-posix \
+        php7.3-apache2 \
         curl \
         ca-certificates \
         runit \
